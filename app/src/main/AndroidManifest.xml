@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="id.ac.polinema.intentexercise"
-    >
+    package="com.gunadi.pertemuan5.quiz">
 
     <application
         android:allowBackup="true"
@@ -12,19 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        >
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.gunadi.pertemuan5.quiz.Depan"
+            android:label="Depan"
+            android:parentActivityName="com.gunadi.pertemuan5.quiz.MainActivity"/>
+        <activity
+            android:name="com.gunadi.pertemuan5.quiz.ProfileActivity"
             android:label="Profile"
-            android:parentActivityName=".RegisterActivity"
-            />
+            android:parentActivityName="com.gunadi.pertemuan5.quiz.RegisterActivity" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.gunadi.pertemuan5.quiz.RegisterActivity"
             android:label="Register"
-            android:parentActivityName=".MainActivity"
-            />
-        <activity android:name=".MainActivity">
+            android:parentActivityName="com.gunadi.pertemuan5.quiz.MainActivity" />
+        <activity
+            android:name="com.gunadi.pertemuan5.quiz.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

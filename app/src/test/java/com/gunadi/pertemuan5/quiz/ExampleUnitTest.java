@@ -1,4 +1,4 @@
-package id.ac.polinema.intentexercise;
+package com.gunadi.pertemuan5.quiz;
 
 import org.junit.Test;
 
